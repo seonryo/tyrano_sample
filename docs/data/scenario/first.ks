@@ -1,46 +1,74 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="早起きゲーム"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
 
-メロスは激怒した。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+あなたはたった今起きました！時間はまだ朝の3時です。[l][r]
 
-(中略)[l][r]
+どうする？[r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_hayaoki1] →ベッドから出る [endlink][r]
+[link target=*nidone1] →まだ寝る [endlink][r]
 [s]
 
-*tag_sleep
+*tag_hayaoki1
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+あなたは早く起きすぎてしまった。[l][r]
+外が暗く、怖くて死んでしまった...[r]
 
-【 BAD END 】[l][cm]
+【 GAME OVER 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_nidone1
+あなたは二度寝した。[l][r]
 
-[bg storage=run.jpg time=500]
+...[l][r]
+
+...[l][r]
+
+あなたは目が覚めた。時間は朝の7時です。[l][r]
+
+どうする？[r]
+
+
+[link target=*tag_hayaoki2] →ベッドから出る [endlink][r]
+[link target=*nidone2] →まだ寝る [endlink][r]
+[s]
+
+
+*tag_hayaoki1
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+
+あなたはちょうどいい時間に起きれた！[l][r]
+健康的！[r]
+
+【 HAPPY END 】[l][cm]
+
+*tag_nidone1
+あなたは二度寝した。[l][r]
+
+...[l][r]
+
+...[l][r]
+
+あなたは目が覚めた。時間は夕方の５時です。[l][r]
+１日を無駄にしたショックで死んでしまった...[r]
+
+【 GAME OVER 】[l][cm]
 
 [jump target=*start]
+
+
+
+
